@@ -7,9 +7,7 @@ const fetchMyIP = function() {
 }
 
 const fetchCoordsByIP = function(body) {
-  
   const ip = JSON.parse(body).ip;
-  
   const apiKey = "4c88d520-a65e-11ec-928b-21b9682715c9" 
   const fullUrl = "https://api.freegeoip.app/json/" + ip + "?apikey=" + apiKey;
   return request(fullUrl);
